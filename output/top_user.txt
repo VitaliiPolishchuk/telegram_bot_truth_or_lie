@@ -1,0 +1,11 @@
+count	id	first_name	last_name	points	spended_time
+1	700	first_name700	last_name	12	166.0
+2	778	first_name778	last_name	12	307.0
+3	210	first_name210	last_name	12	334.0
+4	724	first_name724	last_name	12	501.0
+5	845	first_name845	last_name	12	555.0
+6	236	first_name236	last_name	12	637.0
+7	817	first_name817	last_name	12	696.0
+8	38	first_name38	last_name	12	775.0
+9	314	first_name314	last_name	12	776.0
+10	75	first_name75	last_name	12	791.0
