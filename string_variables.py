@@ -18,8 +18,17 @@ have_fun = 'Гарного настрою!'
 
 only_one_time_game = 'Нам дуже приємно, що ви зацікавились грою та хотіли відповісти на питання знову, але, на жаль, ви можете прийняти участь лише один раз.'
 
+play_with_me = 'Зіграй зі мною та спробуй отримати подарунки від TAXLINK.ua!'
+
 list_enrolled_users = 'Список, що прийняли участь'
 list_finished_users = 'Список, що закінчили'
 top_users = 'ТОП 10'
 
 result_message = 'Ваш результат: {}'
+
+pic_result_1      = 'pic/result_1.jpg'
+pic_result_2      = 'pic/result_2.jpg'
+pic_result_3      = 'pic/result_3.jpg'
+pic_result_4      = 'pic/result_4.jpg'
+pic_result_5      = 'pic/result_5.jpg'
+pic_result_6      = 'pic/result_6.jpg'

@@ -28,4 +28,9 @@ def delete_user_data(chat_id):
     :param chat_id: id юзера
     """
     with shelve.open(shelve_name) as storage:
-        del storage[str(chat_id)]
+        try:
+            json = storage[str(chat_id)]
+            del storage[str(chat_id)]
+        # Если человек не играет, ничего не возвращаем
+        except KeyError:
+            return 

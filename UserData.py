@@ -5,7 +5,7 @@ import time
 
 class UserData:
 
-    question_limit = 0
+    
 
     def __init__(self, chat_id):
         json = shelves_handler.get_user_data(chat_id)
@@ -14,7 +14,7 @@ class UserData:
             self.question_id = 0
             self.count_question = 0
             self.points = 0
-            self.started_time = time.clock()
+            self.started_time = time.perf_counter()
         else:
             self.question_id = json['question_id']
             self.count_question = json['count_question']
@@ -25,10 +25,9 @@ class UserData:
         json = {}
         json['chat_id'] = self.chat_id
         json['question_id'] = self.question_id
-        json['count_question'] = self.count_question
+        json['count_question'] =  self.count_question
         json['points'] = self.points
         json['started_time'] = self.started_time
-        print(json)
         shelves_handler.save_user_data(self.chat_id, json)
 
     def delete(self):
@@ -48,7 +47,10 @@ class UserData:
         return self.points
 
     def is_solved_all_question(self):
-        return self.points > self.question_limit
+        return self.count_question >= 12
 
     def get_spended_time(self):
-        return time.clock() - self.started_time;
+        return time.perf_counter() - self.started_time;
+
+    def get_count_question(self):
+        return self.count_question + 1
